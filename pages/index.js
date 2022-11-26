@@ -13,15 +13,11 @@ const Home = ({products, bannerData}) => {
         <p>Speaker of many variations</p>
       </div>
 
-      <p>asdasdasd</p>
       <div className='products-container'>
-        {/* {products ? console.log(products) : console.log("some wrong")} */}
-        {products?.map( (product) => {
-          <Product key={product._id} product={product}/>
-        })}
+        {products?.map( (product) => <Product key={product._id} product={product}/>)}
       </div>
 
-      <FooterBanner />
+      <FooterBanner footerBanner={bannerData && bannerData[0]}/>
 
     </>
   )
