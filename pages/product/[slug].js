@@ -16,7 +16,7 @@ const ProductDetails = ({ product, products}) => {
     onAdd(product, qty)
     setShowCart(true)
   }
-
+  console.log(image)
   return (
     <div>
         <div className='product-detail-container'>
